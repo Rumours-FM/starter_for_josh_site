@@ -3,6 +3,7 @@
     Template Name: CV
     */
     ?>
+
 <?php require_once('page_header.php'); ?>
 <div class="container-fluid maincontainer">
     <div class="container">
