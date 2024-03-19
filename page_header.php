@@ -62,7 +62,7 @@
         </nav>
 
         <div class="container smallpage-tag"> <!-- div holds content in the middle of the page -->
-            <h1 class="smallpage-title"> Projects</h1> <!-- main tag line -->
+            <h1 class="smallpage-title">Projects</h1> <!-- main tag line -->
         </div>  <!-- container -->
         <?php wp_head(); ?> 
     </header>
