@@ -17,33 +17,33 @@
     <section class="container-fluid articlesbg">
         <div class="container">
             <div>
-                <h3 class="text-center">LATEST ARTICLES</h3>
+                <h3 class="text-center"><?php the_field('titleforarticles'); ?></h3>
             </div>
 
             <div class="row text-center"> <!-- a row to give us access to BS columns -->
 
                 <div class="col-md-4 text-center">
-                    <img class="img-fluid" alt="portrait" src="http://170.187.231.66/~mesh20/sub1/wp-content/themes/starter_for_josh_site/images/image2.jpg">
-                    <h4 class="article-title">A PORTRAIT</h4>
-                    <p class="date">12 December 2020</p>
-                    <p class="article-p">STS has never been shy of seeking new terrains of investigation. More and more STS scholars are starting to explore and intervene in the arts. This object of study brings new challenges and opportunities that we want to explore in this session. We would like to gather first of all simply new kinds of knowledge arising from STS study of the arts.</p>
-                    <a class="readmore" href="#">CONTINUE READING</a>
+                    <img class="img-fluid" src="<?php the_field('articleimage'); ?>" alt="woman">
+                    <h4 class="article-title"><?php the_field('articletitle'); ?></h4>
+                    <p class="date" ><?php the_field('articledate'); ?></p>
+                    <p class="article-p"><?php the_field('articleexcerpt'); ?> </p>
+                    <a href="<?php the_field('readmore'); ?>" class="readmore">CONTINUE READING</a>
                 </div>
 
                 <div class="col-md-4 text-center">
-                    <img class="img-fluid" alt="model" src="http://170.187.231.66/~mesh20/sub1/wp-content/themes/starter_for_josh_site/images/image3.jpg">
-                    <h4 class="article-title">A MODEL</h4>
-                    <p class="date">12 December 2020</p>
-                    <p class="article-p">STS has never been shy of seeking new terrains of investigation. More and more STS scholars are starting to explore and intervene in the arts. This object of study brings new challenges and opportunities that we want to explore in this session. We would like to gather first of all simply new kinds of knowledge arising from STS study of the arts.</p>
-                    <a class="readmore" href="#">CONTINUE READING</a>
+                    <img class="img-fluid" src="<?php the_field('articleimage_middle'); ?>" alt="woman">
+                    <h4 class="article-title"><?php the_field('articletitle_middle'); ?></h4>
+                    <p class="date" ><?php the_field('articledate_middle'); ?></p>
+                    <p class="article-p"><?php the_field('articleexcerpt_middle'); ?> </p>
+                    <a href="<?php the_field('readmore_middle'); ?>" class="readmore">CONTINUE READING</a>
                 </div>
 
                 <div class="col-md-4 text-center">
-                    <img class="img-fluid" alt="games design" src="http://170.187.231.66/~mesh20/sub1/wp-content/themes/starter_for_josh_site/images/image4.jpg">
-                    <h4 class="article-title">A GAMES DESIGN</h4>
-                    <p class="date">12 December 2020</p>
-                    <p class="article-p">STS has never been shy of seeking new terrains of investigation. More and more STS scholars are starting to explore and intervene in the arts. This object of study brings new challenges and opportunities that we want to explore in this session. We would like to gather first of all simply new kinds of knowledge arising from STS study of the arts.</p>
-                    <a class="readmore" href="#">CONTINUE READING</a>
+                    <img class="img-fluid" src="<?php the_field('articleimage_right'); ?>" alt="woman">
+                    <h4 class="article-title"><?php the_field('articletitle_right'); ?></h4>
+                    <p class="date" ><?php the_field('articledate_right'); ?></p>
+                    <p class="article-p"><?php the_field('articleexcerpt_right'); ?> </p>
+                    <a href="<?php the_field('readmore_right'); ?>" class="readmore">CONTINUE READING</a>
                 </div>
 
             </div> <!-- row -->

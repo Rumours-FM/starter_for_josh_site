@@ -32,7 +32,7 @@
 </head>
 <body>
  
-    <header class="container-fluid bg1"> <!-- div for the main image that stretches to the edge of the page -->
+<header class="container-fluid" style="background-size: cover; background-image: url(<?php the_field('headerbackgroundimage') ?>);">
         <nav class="navbar navbar-expand-md navbar-dark">
             <!-- Brand -->
             <a class="navbar-brand" href="#"><span class="josh">JOSH</span><span class="orange">WHITKIN</span></a>
@@ -62,7 +62,7 @@ wp_nav_menu( array(
         </nav>
 
         <div class="container tag"> <!-- div holds content in the middle of the page -->
-            <h1> Games Design for the future</h1> <!-- main tag line -->
+            <h1><?php the_field('maintagline'); ?></h1>
         </div>  <!-- container -->
         <?php wp_head(); ?> 
     </header>
