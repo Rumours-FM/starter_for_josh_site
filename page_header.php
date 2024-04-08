@@ -32,7 +32,7 @@
 </head>
 <body>
  
-    <header class="container-fluid smallpage-bg"> <!-- div for the main image that stretches to the edge of the page -->
+<header class="container-fluid" style="background-size:cover; height:40vh; background-image: url(<?php the_field('projectheaderbackgroundimage') ?>);">
         <nav class="navbar navbar-expand-md navbar-dark">
             <!-- Brand -->
             <a class="navbar-brand" href="#"><span class="josh">JOSH</span><span class="orange">WHITKIN</span></a>
@@ -62,7 +62,7 @@
         </nav>
 
         <div class="container smallpage-tag"> <!-- div holds content in the middle of the page -->
-            <h1 class="smallpage-title">Projects</h1> <!-- main tag line -->
+            <h1 class="smallpage-title"><?php the_field('projectsheadertitle'); ?></h1> <!-- main tag line -->
         </div>  <!-- container -->
         <?php wp_head(); ?> 
     </header>
